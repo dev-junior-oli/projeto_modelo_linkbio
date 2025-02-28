@@ -7,11 +7,11 @@
 }
 
 body{
-    overflow-y: hidden;
-
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
 /*Config primeira parte video de fundo e perfil*/
@@ -146,6 +146,8 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
+    flex-wrap: wrap;
 }
 
 .links a{
@@ -251,7 +253,7 @@ img{
 
 .first-section .seta{
     position: absolute;
-    right: 150px;
+    right: 50px;
     bottom: 10px;
 
     width: 70px;
@@ -347,7 +349,7 @@ img{
 
 .second-section .seta{
     position: absolute;
-    right: 150px;
+    right: 50px;
     bottom: 10px;
 
     width: 70px;
@@ -362,6 +364,9 @@ img{
     width: 70px;
     height: 70px;
 
+    rotate: 0.5turn;
+}
+
 @media screen and (max-width: 768px){
     .first-section, .second-section{
         flex-wrap: wrap;
@@ -370,7 +375,3 @@ img{
         gap: 40px;
     }
 }
-
-    rotate: 0.5turn;
-}
-
