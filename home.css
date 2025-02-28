@@ -1,0 +1,363 @@
+/*Config Geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+/*Config primeira parte video de fundo e perfil*/
+section{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+
+}
+
+video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    z-index: -2;
+
+    object-fit: cover;
+}
+
+.topo{
+
+    height: 200px;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img{
+    width: 150px;
+    height: 150px;
+
+    border-radius: 150%;
+}
+
+.first-section{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.first-section div{
+    
+    margin: 30px 0;
+}
+
+/*Borda do perfil neymar*/
+
+.topo{
+    position: relative;
+}
+
+.topo::before{
+    content: '';
+
+    width: 160px;
+    height: 160px;
+
+    z-index: -1;
+
+    border-radius: 100%;
+
+    position: absolute;
+    top: -5px;
+
+    background: linear-gradient(to right, #fcde00, #079e3b);
+}
+
+/*Titulo do perfil Neymar*/
+
+.topo h1{
+    font-size: 36px;
+
+    text-shadow: 2px 2px black;
+
+    color: #fff;
+
+    position: relative;
+    display: flex;
+}
+
+.topo h1::before{
+    content: '';
+
+    width: 40px;
+    height: 6px;
+
+    position: absolute;
+    top: 42px;
+    left: 2px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(to right, #fcde00, #079e3b) ;
+}
+
+
+.topo h1::after{
+    content: '';
+
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+    right: -20px;
+    bottom: 5px;
+
+    border-radius: 25px;
+
+    background-image: url("img/verificado.png");
+    background-position: center;
+    background-size: 20px 20px;
+}
+
+/*Config primeira parte links*/
+
+.links{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links a{
+    background-color: rgba(0, 0, 0, 0.493);
+    text-align: center;
+
+    width: 500px;
+
+    margin: 10px 0;
+    padding: 10px 0;
+
+    border-radius: 25px;
+
+    text-shadow: 1px 1px black;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.links a:hover{
+    background-color: rgba(255, 255, 255, 0.493);
+    color: black;
+    text-shadow: 1px 1px white;
+}
+
+.links a:nth-child(1):before{
+    content: '';
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    left: 10px;
+
+    background-image: url('img/youtube.png');
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+.links a:nth-child(2):before{
+    content: '';
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    left: 10px;
+
+    background-image: url('img/instagram.png');
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+.links a:nth-child(3):before{
+    content: '';
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    left: 10px;
+
+    background-image: url('img/twitter.png');
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+.links a:nth-child(4):before{
+    content: '';
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    left: 10px;
+
+    background-image: url('img/facebook.png');
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+.links a:nth-child(5):before{
+    content: '';
+
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    left: 10px;
+
+    background-image: url('img/twitch.png');
+    background-size: 30px 30px;
+    background-position: center;
+}
+
+/*Seta de mudança de página*/
+
+.first-section .seta{
+    position: absolute;
+    right: 150px;
+    bottom: 10px;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 100%;
+
+    background: linear-gradient(to right, #fcde00, #079e3b);
+}
+
+.first-section .seta img{
+    width: 70px;
+    height: 70px;
+}
+
+/*Config segunda parte de estatisticas*/
+
+.second-section{
+    background-image: url('img/imagem-de-fundo.jpg');
+    background-position: center;
+    background-size: 100% 100%; 
+
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.second-section h1{
+    font-size: 36px;
+    color: white;
+
+    text-shadow: 2px 2px black;
+
+    display: flex;
+    position: relative;
+}
+
+.second-section h1::before{
+    content: '';
+
+    width: 100%;
+    height: 6px;
+
+    position: absolute;
+    top: 42px;
+    left: 2px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(to right, #fcde00, #079e3b);
+}
+
+
+.second-section table{
+    margin: 40px 0;
+
+    text-align: center;
+}
+
+
+.second-section table thead{
+    font-size: 22px;
+}
+
+
+.second-section table tbody{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.second-section table th, td{
+    padding: 10px;
+    margin: 1px;
+}
+
+.second-section thead tr:nth-of-type(odd){
+    background-color: rgba(0, 0, 0, 0.699);
+    text-shadow: 2px 2px black;
+    color: #fff;
+}
+
+.second-section tbody tr:nth-of-type(even){
+    background-color: rgba(0, 0, 0, 0.699);
+    text-shadow: 2px 2px black;
+    color: #fff;
+}
+
+.second-section tbody tr:nth-of-type(odd){
+    background-color: rgba(255, 255, 255, 0.699);
+    text-shadow: 2px 2px white;
+    color: black;
+}
+
+/*Seta de mudança de página*/
+
+.second-section .seta{
+    position: absolute;
+    right: 150px;
+    bottom: 10px;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 100%;
+
+    background: linear-gradient(to right, #fcde00, #079e3b);
+}
+
+.second-section .seta img{
+    width: 70px;
+    height: 70px;
+
+    rotate: 0.5turn;
+}
+
