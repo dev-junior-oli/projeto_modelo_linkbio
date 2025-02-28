@@ -8,6 +8,10 @@
 
 body{
     overflow-y: hidden;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /*Config primeira parte video de fundo e perfil*/
@@ -357,6 +361,15 @@ img{
 .second-section .seta img{
     width: 70px;
     height: 70px;
+
+@media screen and (max-width: 768px){
+    .first-section, .second-section{
+        flex-wrap: wrap;
+        flex-grow: 1;
+
+        gap: 40px;
+    }
+}
 
     rotate: 0.5turn;
 }
