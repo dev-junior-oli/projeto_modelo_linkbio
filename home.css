@@ -17,7 +17,7 @@ body{
 /*Config primeira parte video de fundo e perfil*/
 section{
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     position: relative;
 
