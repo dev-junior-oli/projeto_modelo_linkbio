@@ -410,6 +410,17 @@ img{
         margin: 0;
     }
 
+    .first-section{
+        background-image: url('img/neyney.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .first-section video{
+        display: none;
+    }
+
     .links a{
         font-size: 10px;
     }
