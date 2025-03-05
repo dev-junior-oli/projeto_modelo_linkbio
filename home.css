@@ -10,8 +10,6 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    
 }
 
 /*Config primeira parte video de fundo e perfil*/
@@ -25,10 +23,6 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-
-    flex-wrap: wrap;
-    flex: 1 1 auto;
-
 }
 
 video{
@@ -43,7 +37,7 @@ video{
 
 .topo{
 
-    height: 200px;
+    height: 300px;
 
     margin: 0;
 
@@ -55,8 +49,8 @@ video{
 }
 
 img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 
     border-radius: 150%;
 }
@@ -81,15 +75,15 @@ img{
 .topo::before{
     content: '';
 
-    width: 160px;
-    height: 160px;
+    width: 210px;
+    height: 210px;
 
     z-index: -1;
 
     border-radius: 100%;
 
     position: absolute;
-    top: -5px;
+    top: 17px;
 
     background: linear-gradient(to right, #fcde00, #079e3b);
 }
@@ -97,9 +91,9 @@ img{
 /*Titulo do perfil Neymar*/
 
 .topo h1{
-    font-size: 36px;
+    font-size: 42px;
 
-    text-shadow: 2px 2px black;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.733);
 
     color: #fff;
 
@@ -110,11 +104,11 @@ img{
 .topo h1::before{
     content: '';
 
-    width: 40px;
+    width: 50px;
     height: 6px;
 
     position: absolute;
-    top: 42px;
+    top: 50px;
     left: 2px;
 
     border-radius: 25px;
@@ -149,8 +143,6 @@ img{
     align-items: center;
     justify-content: space-between;
 
-    flex-wrap: wrap;
-
     width: 30%;
     min-width: 260px;
 }
@@ -159,7 +151,7 @@ img{
     background-color: rgba(0, 0, 0, 0.493);
     text-align: center;
 
-    width: 100%;
+    width: 90%;
 
     margin: 10px 0;
     padding: 10px 0;
@@ -293,9 +285,6 @@ img{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-
-    flex-wrap: wrap;
-    flex: 1 1 auto;
 }
 
 .second-section h1{
@@ -327,6 +316,8 @@ img{
 .second-section table{
     text-align: center;
     margin: 20px 0 ;
+
+    width: 50%;
 }
 
 
@@ -386,11 +377,52 @@ img{
     rotate: 0.5turn;
 }
 
-@media screen and (max-width: 768px){
-    .first-section, .second-section{
-        flex-wrap: wrap;
-        flex-grow: 1;
+@media only screen and (max-width: 720px){
+    
+    img{
+        width: 150px;
+        height: 150px;
+    
+        border-radius: 150%;
+    }
 
-        gap: 40px;
+    .topo{
+        position: relative;
+    }
+
+    .topo::before{
+        content: '';
+    
+        width: 160px;
+        height: 160px;
+    
+        z-index: -1;
+    
+        border-radius: 100%;
+    
+        position: absolute;
+        top: 42px;
+    
+        background: linear-gradient(to right, #fcde00, #079e3b);
+    }
+
+    .first-section div{
+        margin: 0;
+    }
+
+    .links a{
+        font-size: 10px;
+    }
+
+    .seta{
+        display: none;
+    }
+
+    body{
+        overflow: auto;
+    }
+
+    .second-section{
+        display: none;
     }
 }
